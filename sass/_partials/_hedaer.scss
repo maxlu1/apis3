@@ -1,0 +1,44 @@
+@import '../_partials/_shared/variables';
+.wptest_apis3{
+    &-header{
+        &-brandImage{
+            position: relative;
+            float: left;
+            width: 206px;
+            height: 26px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.site-header{
+    padding: 32px;
+    padding-top: 16px;
+    &-searchButton{
+        cursor: pointer;
+        position: relative;
+        float: right;
+        font-size: 16px;  
+        margin-top: 16px;
+        margin-left: 10%;
+        color: $blue-text-paint;
+        @media (max-width: $breakpoint-sm) {
+            margin-top: 0px;
+        }          
+        p{
+            position: relative;
+            float: left;
+        }
+        .icon{
+            position: relative;
+            float: left;
+            width: 24px;
+            height: 24px; 
+            svg{
+                fill: $blue-text-paint;
+            }           
+        }      
+    }
+}

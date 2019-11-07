@@ -1,0 +1,89 @@
+@import '../_partials/_shared/variables';
+.inputsMainForm{
+    background: $white-paint;
+    color: $blue-text-paint;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    margin-top: 6px;
+}
+.wptest_apis3{
+    &-contentPage{
+        .wpcf7{
+            position: relative;
+            float: left;
+            width: 100%;  
+            margin-bottom: 32px;      
+        }
+        .wpcf7-form{
+            font-size: 16px;
+            input, select {
+                @extend .inputsMainForm;
+                max-height: 54px;
+            }
+            textarea{
+                @extend .inputsMainForm;
+                height: 272px;
+                resize: none;
+            }
+            label{
+                color: $white-paint; 
+                margin-bottom: 16px;
+                position: relative;
+                float: left;
+                width: 100%;  
+                font-size: 16px;
+                .mainFormCover{
+                    z-index: 99;
+                    position: absolute;
+                    width: 100%;
+                    height: 53px;
+                    background: $white-paint;
+                    top: 30px;      
+                    color: $blue-text-paint;              
+                    padding: 14px;
+                }
+
+            }
+            .mainForm-col{
+                position: relative;
+                float: left;
+                width: 50%;
+                width: 50%;
+                padding: 16px;
+                &-col2{
+                    float: right;
+                }
+                &-col1{
+                    @media (max-width: $breakpoint-md) {
+                        padding-top: 32px;
+                    }
+                }
+                @media (max-width: $breakpoint-md) {
+                    width: 80%;
+                    left: 10%;
+                    padding: 0px;
+                }
+            }
+            .wpcf7-submit{
+                background: $blue-text-paint;
+                color: $white-paint;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .wpcf7-not-valid-tip{
+                background: $red-paint;
+                color: $white-paint;
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    }
+
+}
+.mainForm-col1{
+    @media (max-width: $breakpoint-md) {
+        padding-top: 32px !important;
+    }   
+}
+

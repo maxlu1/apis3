@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,900&display=swap');
+@import '../_shared/variables';
+*{
+    font-family: 'Muli', sans-serif;
+
+}
+html, body{
+    overflow-x: hidden !important;
+}
+
+body{
+    background: $screen-color;
+    background-color: $screen-color !important;
+}
+
+.wpcf7-response-output{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

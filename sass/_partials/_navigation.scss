@@ -1,0 +1,23 @@
+@import './_shared/variables';
+.main-navigation{
+    position: relative;
+    float: right;
+    width: auto;
+    color: $blue-text-paint;
+    @media (max-width: $breakpoint-sm) {
+        display: none;
+    }     
+    ul{
+        list-style-type:none;
+    }
+    li{
+        position: relative;
+        float: right;
+        padding: 0px 12px 0px 12px;
+        text-transform: lowercase;
+        font-size: 14px;
+        a{
+            color: $blue-text-paint;  
+        }
+    }
+}

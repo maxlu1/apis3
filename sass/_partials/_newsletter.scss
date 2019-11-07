@@ -1,0 +1,84 @@
+@import './_shared/variables';
+.newsletter{
+    &-section{
+        position: relative;
+        float: right;
+        width: auto;
+        margin: 32px;
+        margin-top: 64px;
+        .widget{
+            position: relative;
+            float: left;
+            margin-right: 26px;
+        }
+        .textwidget{
+            color: $white-paint;
+            position: relative;
+            float: left;
+            p{
+                font-size: 14px;
+                margin: 0px;
+            }
+            b, strong{
+                font-size: 22px;                
+            }
+        }
+        .wpcf7{
+            position: relative;
+            float: left;
+            color: $white-paint;
+            font-size: 12px;
+            br{
+                display: none;
+            }
+            .newsletter-col{
+                position: relative;
+                width: 180px;
+                label{
+                    @media (max-width: $breakpoint-md) {
+                        width: 100%;
+                    }                       
+                }               
+                input{
+                    max-width: 100px;
+                    background: initial;
+                    border: none;
+                    color: $white-paint;
+                    margin-left: 2px;
+                    border: 1px solid rgba(255, 255, 255, 0.6);
+                    border-width: 0px 0px 1px 1px;
+                    @media (max-width: $breakpoint-md) {
+                        max-width: 100%;
+                    }                      
+                    
+                }
+            }
+            .col_1{
+                float: left;
+            }
+            .col_2{
+                float: right;
+                @media (max-width: $breakpoint-md) {
+                    float: left;
+                }                     
+            }
+
+            &-submit{
+                position: relative;
+                float: right;
+                margin: 16px;
+                background: $yellow_regular-paint;
+                border: none;
+                font-size: 12px;
+                padding: 4px 16px 4px 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+            
+            }
+        }
+        @media (max-width: $breakpoint-md) {
+            margin-top: 0px;
+        }     
+    
+    }
+}
